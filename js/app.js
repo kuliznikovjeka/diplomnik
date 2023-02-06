@@ -3155,12 +3155,12 @@
         });
     }
     function initSliders() {
-        if (document.querySelector(".swiper")) new core(".swiper", {
+        if (document.querySelector(".prices__slider")) new core(".prices__slider", {
             modules: [ Navigation ],
             observer: true,
             observeParents: true,
-            slidesPerView: 1,
-            spaceBetween: 0,
+            slidesPerView: 4,
+            spaceBetween: 20,
             autoHeight: true,
             speed: 800,
             navigation: {

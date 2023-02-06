@@ -557,6 +557,100 @@ h6 {
           flex: 0 1 280px;
 }
 
+.slide-prices__item {
+  border: 3px solid rgba(147, 147, 147, 0.0549019608);
+}
+
+.item-slide-prices {
+  border-radius: 16px;
+}
+
+.head-slide-prices {
+  background-color: #e3eaef;
+  border-radius: 16px 16px 0px 0px;
+  padding: 14px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+}
+
+.head-slide-prices__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 57px;
+          flex: 0 0 57px;
+}
+
+.head-slide-prices__title {
+  font-weight: 700;
+  line-height: 1.1666666667;
+  text-transform: uppercase;
+  color: #6cac3d;
+}
+
+.head-slide-prices__title:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.head-slide-prices__subtitle {
+  font-weight: 700;
+  line-height: 1.1428571429;
+}
+
+.top-slide-prices {
+  border-bottom: 2px solid #234875;
+}
+
+.top-slide-prices__text {
+  padding: 24px 18px 11px 28px;
+  font-weight: 300;
+  line-height: 1.1428571429;
+}
+
+.middle-slide-prices {
+  padding: 24px 18px 11px 28px;
+  height: 100px;
+  overflow-y: scroll;
+  overflow: auto;
+}
+
+.middle-slide-prices::-webkit-scrollbar {
+  border-radius: 100px;
+  background: orange;
+  height: 5px;
+  width: 5px;
+}
+
+.middle-slide-prices::-webkit-scrollbar-thumb {
+  background: #6cac3d;
+  border-radius: 100px;
+}
+
+.middle-slide-prices__body__title {
+  font-weight: 700;
+  line-height: 1.1428571429;
+}
+
+.middle-slide-prices__body__title:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.middle-slide-prices__body__desc {
+  line-height: 1.1428571429;
+}
+
+.middle-slide-prices__body__desc::before {
+  content: "";
+  background: url("../img/prices/chek.svg") 0 0 no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
 .stages__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -881,6 +975,22 @@ h6 {
     margin-bottom: 1.25rem;
   }
 
+  .prices {
+    padding-top: 4.5625rem;
+  }
+
+  .prices {
+    padding-bottom: 2.8125rem;
+  }
+
+  .prices__title {
+    margin-bottom: 3rem;
+  }
+
+  .head-slide-prices__title {
+    font-size: 1.125rem;
+  }
+
   .stages {
     padding-top: 3.125rem;
   }
@@ -1035,6 +1145,22 @@ h6 {
 
   .calculation-form__label:not(:last-child) {
     margin-bottom: 0.9375rem;
+  }
+
+  .prices {
+    padding-top: 1.875rem;
+  }
+
+  .prices {
+    padding-bottom: 1.875rem;
+  }
+
+  .prices__title {
+    margin-bottom: 1.875rem;
+  }
+
+  .head-slide-prices__title {
+    font-size: 1rem;
   }
 
   .stages {
@@ -1570,6 +1696,54 @@ h6 {
 @supports not (margin-bottom: clamp( 0.9375rem , 0.8276098901rem  +  0.5494505495vw , 1.25rem )) {
     .calculation-form__label:not(:last-child) {
       margin-bottom: calc(0.9375rem + 0.3125 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (padding-top: clamp( 1.875rem , 0.9299450549rem  +  4.7252747253vw , 4.5625rem )) {
+    .prices {
+      padding-top: clamp( 1.875rem , 0.9299450549rem  +  4.7252747253vw , 4.5625rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , 0.9299450549rem  +  4.7252747253vw , 4.5625rem )) {
+    .prices {
+      padding-top: calc(1.875rem + 2.6875 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 1.5453296703rem  +  1.6483516484vw , 2.8125rem )) {
+    .prices {
+      padding-bottom: clamp( 1.875rem , 1.5453296703rem  +  1.6483516484vw , 2.8125rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 1.5453296703rem  +  1.6483516484vw , 2.8125rem )) {
+    .prices {
+      padding-bottom: calc(1.875rem + 0.9375 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.4793956044rem  +  1.978021978vw , 3rem )) {
+    .prices__title {
+      margin-bottom: clamp( 1.875rem , 1.4793956044rem  +  1.978021978vw , 3rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.4793956044rem  +  1.978021978vw , 3rem )) {
+    .prices__title {
+      margin-bottom: calc(1.875rem + 1.125 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.956043956rem  +  0.2197802198vw , 1.125rem )) {
+    .head-slide-prices__title {
+      font-size: clamp( 1rem , 0.956043956rem  +  0.2197802198vw , 1.125rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.956043956rem  +  0.2197802198vw , 1.125rem )) {
+    .head-slide-prices__title {
+      font-size: calc(1rem + 0.125 * (100vw - 20rem) / 56.875);
     }
 }
 
