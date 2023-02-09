@@ -3593,6 +3593,11 @@
             touchRatio: 1,
             simulateTouch: true,
             loop: true,
+            effect: "fade",
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
             pagination: {
                 el: ".prices__pagination",
                 clickable: true
@@ -3646,20 +3651,46 @@
             observer: true,
             observeParents: true,
             slidesPerView: 3,
-            spaceBetween: 50,
-            autoHeight: true,
+            spaceBetween: 70,
             speed: 800,
             touchRatio: 1,
             simulateTouch: true,
             loop: true,
+            effect: "fade",
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
             pagination: {
                 el: ".masters__pagination",
                 clickable: true
             },
             centeredSlides: true,
             navigation: {
-                prevEl: ".masters__arrow .masters__prev",
-                nextEl: ".masters__arrow .masters__next"
+                prevEl: ".masters__arrow.masters__prev",
+                nextEl: ".masters__arrow.masters__next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                500: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 50
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 60
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 70
+                }
             },
             on: {}
         });
