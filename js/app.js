@@ -3593,11 +3593,6 @@
             touchRatio: 1,
             simulateTouch: true,
             loop: true,
-            effect: "fade",
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: false
-            },
             pagination: {
                 el: ".prices__pagination",
                 clickable: true
@@ -3656,11 +3651,6 @@
             touchRatio: 1,
             simulateTouch: true,
             loop: true,
-            effect: "fade",
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: false
-            },
             pagination: {
                 el: ".masters__pagination",
                 clickable: true
@@ -3691,6 +3681,27 @@
                     slidesPerView: 3,
                     spaceBetween: 70
                 }
+            },
+            on: {}
+        });
+        if (document.querySelector(".commands__slider")) new core(".commands__slider", {
+            modules: [ Navigation, Pagination, Autoplay ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            speed: 800,
+            touchRatio: 1,
+            simulateTouch: true,
+            loop: true,
+            pagination: {
+                el: ".commands__pagination",
+                clickable: true
+            },
+            centeredSlides: true,
+            navigation: {
+                prevEl: ".commands__arrow.commands__prev",
+                nextEl: ".commands__arrow.commands__next"
             },
             on: {}
         });
