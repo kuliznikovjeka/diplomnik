@@ -3684,6 +3684,37 @@
             },
             on: {}
         });
+        const slider = document.querySelector(".youtube__slider");
+        const miniSlider = document.querySelector(".youtube-mini__slider");
+        let mySwiper;
+        function mobileSlider() {
+            if (window.innerWidth <= 600 && "false" == slider.dataset.mobile) {
+                mySwiper = new core(slider, {
+                    slidesPerView: 1,
+                    loop: true,
+                    slideClass: "slide-youtube",
+                    thumbs: {
+                        swiper: mySwiperMini
+                    }
+                });
+                slider.dataset.mobile = "true";
+            }
+            if (window.innerWidth > 600) {
+                slider.dataset.mobile = "false";
+                if (slider.classList.contains("swiper-initialized")) mySwiper.destroy();
+            }
+        }
+        mobileSlider();
+        window.addEventListener("resize", (() => {
+            mobileSlider();
+        }));
+        let mySwiperMini = new core(miniSlider, {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loopedSlides: 3,
+            freeMode: true,
+            loop: true
+        });
         if (document.querySelector(".commands__slider")) new core(".commands__slider", {
             modules: [ Navigation, Pagination, Autoplay ],
             observer: true,
