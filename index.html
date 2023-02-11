@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230210234621">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230211234119">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20230210234621" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20230211234119" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -25,13 +25,13 @@
 					<div class="top-header__menu menu">
 						<nav data-da=".middle-header,1200,1" class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" class="menu__link">Цены </a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Портфолио</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+								<li class="menu__item"><a href="#prices" class="menu__link">Цены </a></li>
+								<li class="menu__item"><a href="#service" class="menu__link">Услуги</a></li>
+								<li class="menu__item"><a href="#examples" class="menu__link">Портфолио</a></li>
+								<li class="menu__item"><a href="#promotions" class="menu__link">Акции</a></li>
+								<li class="menu__item"><a href="#prevences" class="menu__link">Преимущества</a></li>
+								<li class="menu__item"><a href="#blog" class="menu__link">Блог</a></li>
+								<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -52,7 +52,7 @@
 							<a href="#" class="top-header__social"><img src="img/header/whatsapp.svg" alt="whatsapp"></a>
 							<a href="#" class="top-header__social"><img src="img/header/tg.svg" alt="tg"></a>
 						</div>
-						<a href="#" class="top-header__btn btn-border ">Заказать звонок</a>
+						<a href="#main" class="top-header__btn btn-border ">Заказать звонок</a>
 						<a href="tel:+72332222222" class="top-header__mobile-call"><img src="img/header/mobile.svg" alt="call to firm">
 						</a>
 					</div>
@@ -127,7 +127,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__main main-page">
+			<section id="main" class="page__main main-page">
 				<div class="main-page__container">
 					<div class="main-page__content">
 						<div class="main-page__text-block">
@@ -249,7 +249,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__prices prices">
+			<section id="prices" class="page__prices prices">
 				<div class="prices__container">
 					<div class="prices__title title">Цены на ремонт</div>
 					<div class="prices__row">
@@ -489,8 +489,487 @@
 					<div class="prices__pagination"></div>
 				</div>
 			</section>
-
-			<section class="page__promotions promotions">
+			<section id="examples" class="page__example example">
+				<div class="example__container">
+					<div class="example__title title title_center">Примеры наших работ</div>
+					<div class="example__tabs tabs-example">
+						<ul class="tabs-example__list">
+							<li class="tabs-example__item">
+								<button class="tabs-example__btn tabs-example__btn_active" data-tabs-path="tab-1">Капитальный</button>
+							</li>
+							<li class="tabs-example__item">
+								<button class="tabs-example__btn" data-tabs-path="tab-2">Косметиеский</button>
+							</li>
+							<li class="tabs-example__item">
+								<button class="tabs-example__btn" data-tabs-path="tab-3">Под
+									ключ</button>
+							</li>
+							<li class="tabs-example__item">
+								<button class="tabs-example__btn" data-tabs-path="tab-4">Студии</button>
+							</li>
+							<li class="tabs-example__item">
+								<button class="tabs-example__btn" data-tabs-path="tab-5">Черновой</button>
+							</li>
+						</ul>
+						<div class="tabs__content tabs__content_active content-tabs" data-tabs-target="tab-1">
+							<div class="content-tabs">
+								<div class="content-tabs__pagination"></div>
+								<div class="content-tabs__sliders">
+									<div class="content-tabs__slider-nav swiper">
+										<div class="content-tabs__wrapper-nav swiper-wrapper">
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+										</div>
+									</div>
+									<div class="content-tabs__slider swiper">
+										<div class="content-tabs__wrapper swiper-wrapper">
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-content-tabs__content">
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_1">Сумма:</div>
+											<div class="slide-content-tabs__value">272 250 руб.</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_2">Площадь:</div>
+											<div class="slide-content-tabs__value">43 м2</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_3">Комнат:</div>
+											<div class="slide-content-tabs__value">3</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_4">Адрес: </div>
+											<div class="slide-content-tabs__value">Кулика 18</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_5">Срок:</div>
+											<div class="slide-content-tabs__value">90 дней</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_6">Перечень работ:
+											</div>
+										</div>
+										<ul class="slide-content-tabs__list">
+											<li class="slide-content-tabs__item">Штукатурка стен по маякам</li>
+											<li class="slide-content-tabs__item">Грунтовка стен и потолка</li>
+											<li class="slide-content-tabs__item">Монтаж натяжных потолков</li>
+											<li class="slide-content-tabs__item">Шпатлёвка стен под обои</li>
+											<li class="slide-content-tabs__item">Окраске стен</li>
+											<li class="slide-content-tabs__item">Укладка плитки в с/у</li>
+											<li class="slide-content-tabs__item">Прокладка электрики</li>
+											<li class="slide-content-tabs__item">Установка плинтусов и откосов</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content content-tabs" data-tabs-target="tab-2">
+							<div class="content-tabs">
+								<div class="content-tabs__pagination"></div>
+								<div class="content-tabs__sliders">
+									<div class="content-tabs__slider-nav swiper">
+										<div class="content-tabs__wrapper-nav swiper-wrapper">
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+										</div>
+									</div>
+									<div class="content-tabs__slider swiper">
+										<div class="content-tabs__wrapper swiper-wrapper">
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-content-tabs__content">
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_1">Сумма:</div>
+											<div class="slide-content-tabs__value">Писюн</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_2">Площадь:</div>
+											<div class="slide-content-tabs__value">43 м2</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_3">Комнат:</div>
+											<div class="slide-content-tabs__value">3</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_4">Адрес: </div>
+											<div class="slide-content-tabs__value">Кулика 18</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_5">Срок:</div>
+											<div class="slide-content-tabs__value">90 дней</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_6">Перечень работ:
+											</div>
+										</div>
+										<ul class="slide-content-tabs__list">
+											<li class="slide-content-tabs__item">Штукатурка стен по маякам</li>
+											<li class="slide-content-tabs__item">Грунтовка стен и потолка</li>
+											<li class="slide-content-tabs__item">Монтаж натяжных потолков</li>
+											<li class="slide-content-tabs__item">Шпатлёвка стен под обои</li>
+											<li class="slide-content-tabs__item">Окраске стен</li>
+											<li class="slide-content-tabs__item">Укладка плитки в с/у</li>
+											<li class="slide-content-tabs__item">Прокладка электрики</li>
+											<li class="slide-content-tabs__item">Установка плинтусов и откосов</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content content-tabs" data-tabs-target="tab-3">
+							<div class="content-tabs">
+								<div class="content-tabs__pagination"></div>
+								<div class="content-tabs__sliders">
+									<div class="content-tabs__slider-nav swiper">
+										<div class="content-tabs__wrapper-nav swiper-wrapper">
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+										</div>
+									</div>
+									<div class="content-tabs__slider swiper">
+										<div class="content-tabs__wrapper swiper-wrapper">
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-content-tabs__content">
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_1">Сумма:</div>
+											<div class="slide-content-tabs__value">Писюн</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_2">Площадь:</div>
+											<div class="slide-content-tabs__value">43 м2</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_3">Комнат:</div>
+											<div class="slide-content-tabs__value">3</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_4">Адрес: </div>
+											<div class="slide-content-tabs__value">Кулика 18</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_5">Срок:</div>
+											<div class="slide-content-tabs__value">90 дней</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_6">Перечень работ:
+											</div>
+										</div>
+										<ul class="slide-content-tabs__list">
+											<li class="slide-content-tabs__item">Штукатурка стен по маякам</li>
+											<li class="slide-content-tabs__item">Грунтовка стен и потолка</li>
+											<li class="slide-content-tabs__item">Монтаж натяжных потолков</li>
+											<li class="slide-content-tabs__item">Шпатлёвка стен под обои</li>
+											<li class="slide-content-tabs__item">Окраске стен</li>
+											<li class="slide-content-tabs__item">Укладка плитки в с/у</li>
+											<li class="slide-content-tabs__item">Прокладка электрики</li>
+											<li class="slide-content-tabs__item">Установка плинтусов и откосов</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content content-tabs" data-tabs-target="tab-4">
+							<div class="content-tabs">
+								<div class="content-tabs__pagination"></div>
+								<div class="content-tabs__sliders">
+									<div class="content-tabs__slider-nav swiper">
+										<div class="content-tabs__wrapper-nav swiper-wrapper">
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+										</div>
+									</div>
+									<div class="content-tabs__slider swiper">
+										<div class="content-tabs__wrapper swiper-wrapper">
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-content-tabs__content">
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_1">Сумма:</div>
+											<div class="slide-content-tabs__value">Писюн</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_2">Площадь:</div>
+											<div class="slide-content-tabs__value">43 м2</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_3">Комнат:</div>
+											<div class="slide-content-tabs__value">3</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_4">Адрес: </div>
+											<div class="slide-content-tabs__value">Кулика 18</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_5">Срок:</div>
+											<div class="slide-content-tabs__value">90 дней</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_6">Перечень работ:
+											</div>
+										</div>
+										<ul class="slide-content-tabs__list">
+											<li class="slide-content-tabs__item">Штукатурка стен по маякам</li>
+											<li class="slide-content-tabs__item">Грунтовка стен и потолка</li>
+											<li class="slide-content-tabs__item">Монтаж натяжных потолков</li>
+											<li class="slide-content-tabs__item">Шпатлёвка стен под обои</li>
+											<li class="slide-content-tabs__item">Окраске стен</li>
+											<li class="slide-content-tabs__item">Укладка плитки в с/у</li>
+											<li class="slide-content-tabs__item">Прокладка электрики</li>
+											<li class="slide-content-tabs__item">Установка плинтусов и откосов</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content content-tabs" data-tabs-target="tab-5">
+							<div class="content-tabs">
+								<div class="content-tabs__pagination"></div>
+								<div class="content-tabs__sliders">
+									<div class="content-tabs__slider-nav swiper">
+										<div class="content-tabs__wrapper-nav swiper-wrapper">
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+											<div class="content-tabs__slide-nav  swiper-slide">
+												<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="previue"></picture>
+											</div>
+										</div>
+									</div>
+									<div class="content-tabs__slider swiper">
+										<div class="content-tabs__wrapper swiper-wrapper">
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+											<div class="content-tabs__slide slide-content-tabs swiper-slide">
+												<div class="slide-content-tabs__img">
+													<picture><source srcset="img/examples/01.webp" type="image/webp"><img src="img/examples/01.jpg" alt="image"></picture>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-content-tabs__content">
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_1">Сумма:</div>
+											<div class="slide-content-tabs__value">Писюн</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_2">Площадь:</div>
+											<div class="slide-content-tabs__value">43 м2</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_3">Комнат:</div>
+											<div class="slide-content-tabs__value">3</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_4">Адрес: </div>
+											<div class="slide-content-tabs__value">Кулика 18</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_5">Срок:</div>
+											<div class="slide-content-tabs__value">90 дней</div>
+										</div>
+										<div class="slide-content-tabs__line">
+											<div class="slide-content-tabs__label slide-content-tabs__label_6">Перечень работ:
+											</div>
+										</div>
+										<ul class="slide-content-tabs__list">
+											<li class="slide-content-tabs__item">Штукатурка стен по маякам</li>
+											<li class="slide-content-tabs__item">Грунтовка стен и потолка</li>
+											<li class="slide-content-tabs__item">Монтаж натяжных потолков</li>
+											<li class="slide-content-tabs__item">Шпатлёвка стен под обои</li>
+											<li class="slide-content-tabs__item">Окраске стен</li>
+											<li class="slide-content-tabs__item">Укладка плитки в с/у</li>
+											<li class="slide-content-tabs__item">Прокладка электрики</li>
+											<li class="slide-content-tabs__item">Установка плинтусов и откосов</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="promotions" class="page__promotions promotions">
 				<div class="promotions__container">
 					<div class="promotions__title title">Акции</div>
 					<div class="promotions__row">
@@ -572,7 +1051,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__stages stages">
+			<section id="stages" class="page__stages stages">
 				<div class="stages__container">
 					<div class="stages__text-block text-block">
 						<div class="text-block__title">Как мы работаем</div>
@@ -618,7 +1097,7 @@
 					<div class="stages__dec"><picture><source srcset="img/stages/dec.webp" type="image/webp"><img src="img/stages/dec.png" alt="decor"></picture></div>
 				</div>
 			</section>
-			<section class="page__stock stock">
+			<section id="stock" class="page__stock stock">
 				<div class="stock__container">
 					<div class="stock__title title">Свой склад и шоурум материалов наших партнеров в Москве</div>
 					<div class="stock__body body-stock">
@@ -713,7 +1192,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__prevences prevences">
+			<section id="prevences" class="page__prevences prevences">
 				<div class="prevences__container">
 					<div class="prevences__title title">Наши преимущества</div>
 					<div class="prevences__row">
@@ -849,7 +1328,7 @@
 					<div class="reviews__pagination"></div>
 				</div>
 			</section>
-			<section class="page__commands commands">
+			<section id="service" class="page__commands commands">
 				<div class="commands__container">
 					<div class="commands__title title title_center">Наша команда</div>
 					<div class="commands__positions">
@@ -1034,7 +1513,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__youtube youtube">
+			<section id="blog" class="page__youtube youtube">
 				<div class="youtube__container">
 					<div class="youtube__title title title_center">Наш you-tube канал</div>
 					<div class="youtube__row">
@@ -1043,43 +1522,73 @@
 								<div class="youtube__slide slide-youtube swiper-slide">
 									<div class="slide-youtube__item">
 										<div class="slide-youtube__previue"><picture><source srcset="img/you-tube/01.webp" type="image/webp"><img src="img/you-tube/01.jpg" alt="previue"></picture></div>
-										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox></a>
+										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox>
+											<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="75" height="75" rx="37.5" fill="#6CAC3D" />
+												<path d="M52.5 34.4019C54.5 35.5566 54.5 38.4434 52.5 39.5981L31.5 51.7224C29.5 52.8771 27 51.4338 27 49.1244L27 24.8756C27 22.5662 29.5 21.1229 31.5 22.2776L52.5 34.4019Z" fill="white" />
+											</svg>
+										</a>
 									</div>
 								</div>
 								<div class="youtube__slide slide-youtube swiper-slide">
 									<div class="slide-youtube__item">
 										<div class="slide-youtube__previue"><picture><source srcset="img/you-tube/01.webp" type="image/webp"><img src="img/you-tube/01.jpg" alt="previue"></picture></div>
-										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox></a>
+										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox>
+											<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="75" height="75" rx="37.5" fill="#6CAC3D" />
+												<path d="M52.5 34.4019C54.5 35.5566 54.5 38.4434 52.5 39.5981L31.5 51.7224C29.5 52.8771 27 51.4338 27 49.1244L27 24.8756C27 22.5662 29.5 21.1229 31.5 22.2776L52.5 34.4019Z" fill="white" />
+											</svg>
+										</a>
 									</div>
 								</div>
 								<div class="youtube__slide slide-youtube swiper-slide">
 									<div class="slide-youtube__item">
 										<div class="slide-youtube__previue"><picture><source srcset="img/you-tube/01.webp" type="image/webp"><img src="img/you-tube/01.jpg" alt="previue"></picture></div>
-										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox></a>
+										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox>
+											<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="75" height="75" rx="37.5" fill="#6CAC3D" />
+												<path d="M52.5 34.4019C54.5 35.5566 54.5 38.4434 52.5 39.5981L31.5 51.7224C29.5 52.8771 27 51.4338 27 49.1244L27 24.8756C27 22.5662 29.5 21.1229 31.5 22.2776L52.5 34.4019Z" fill="white" />
+											</svg>
+										</a>
 									</div>
 								</div>
 								<div class="youtube__slide slide-youtube swiper-slide">
 									<div class="slide-youtube__item">
 										<div class="slide-youtube__previue"><picture><source srcset="img/you-tube/01.webp" type="image/webp"><img src="img/you-tube/01.jpg" alt="previue"></picture></div>
-										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox></a>
+										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox>
+											<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="75" height="75" rx="37.5" fill="#6CAC3D" />
+												<path d="M52.5 34.4019C54.5 35.5566 54.5 38.4434 52.5 39.5981L31.5 51.7224C29.5 52.8771 27 51.4338 27 49.1244L27 24.8756C27 22.5662 29.5 21.1229 31.5 22.2776L52.5 34.4019Z" fill="white" />
+											</svg>
+										</a>
 									</div>
 								</div>
 								<div class="youtube__slide slide-youtube swiper-slide">
 									<div class="slide-youtube__item">
 										<div class="slide-youtube__previue"><picture><source srcset="img/you-tube/01.webp" type="image/webp"><img src="img/you-tube/01.jpg" alt="previue"></picture></div>
-										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox></a>
+										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox>
+											<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="75" height="75" rx="37.5" fill="#6CAC3D" />
+												<path d="M52.5 34.4019C54.5 35.5566 54.5 38.4434 52.5 39.5981L31.5 51.7224C29.5 52.8771 27 51.4338 27 49.1244L27 24.8756C27 22.5662 29.5 21.1229 31.5 22.2776L52.5 34.4019Z" fill="white" />
+											</svg>
+										</a>
 									</div>
 								</div>
 								<div class="youtube__slide slide-youtube swiper-slide">
 									<div class="slide-youtube__item">
 										<div class="slide-youtube__previue"><picture><source srcset="img/you-tube/01.webp" type="image/webp"><img src="img/you-tube/01.jpg" alt="previue"></picture></div>
-										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox></a>
+										<a href="https://youtu.be/ZkdGHHPtfh0" class="slide-youtube__play" data-fancybox>
+											<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="75" height="75" rx="37.5" fill="#6CAC3D" />
+												<path d="M52.5 34.4019C54.5 35.5566 54.5 38.4434 52.5 39.5981L31.5 51.7224C29.5 52.8771 27 51.4338 27 49.1244L27 24.8756C27 22.5662 29.5 21.1229 31.5 22.2776L52.5 34.4019Z" fill="white" />
+											</svg>
+										</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="youtube-mini__slider swiper">
+					<div thumbsSlider="" class="youtube-mini__slider swiper">
 						<div class="youtube-mini__wrapper swiper-wrapper">
 							<div class="youtube-mini__slide slide-youtube-mini swiper-slide">
 								<div class="slide-youtube-mini__previue"><picture><source srcset="img/you-tube/01.webp" type="image/webp"><img src="img/you-tube/01.jpg" alt="previue"></picture></div>
@@ -1101,6 +1610,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="youtube__pagination"></div>
 				</div>
 			</section>
 			<section class="page__suppliers suppliers">
@@ -1119,7 +1629,7 @@
 								</div>
 								<div class="suppliers__span-text"><span>30 000</span> руб.</div>
 							</div>
-							<a href="#" class="suppliers__btn btn">Оставить заявку</a>
+							<a href="#main" class="suppliers__btn btn">Оставить заявку</a>
 						</div>
 						<div class="suppliers__content">
 							<div class="suppliers__line">
@@ -1134,7 +1644,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__q-answers q-answers">
+			<section id="q-and-a" class="page__q-answers q-answers">
 				<div class="q-answers__container">
 					<div class="q-answers__text-block text-block">
 						<div class="text-block__title">Вопросы и ответы</div>
@@ -1214,12 +1724,12 @@
 							рассчитаем стоимость и подготовим индивидуальное предложение!
 						</div>
 					</div>
-					<a href="#" class="consultation__btn btn-border_w">Оставить заявку</a>
+					<a href="#main" class="consultation__btn btn-border_w">Оставить заявку</a>
 				</div>
 			</section>
 
 		</main>
-		<footer class="footer">
+		<footer id="contacts" class="footer">
 			<div class="footer__container">
 				<div class="footer__top top-footer">
 					<div class="top-footer__column">
@@ -1248,12 +1758,12 @@
 					</div>
 					<div class="top-footer__column">
 						<div class="top-footer__item">
-							<a href="#" class="top-footer__title">Портфолио</a>
-							<a href="#" class="top-footer__title">Стоимость</a>
-							<a href="#" class="top-footer__title">Акции</a>
-							<a href="#" class="top-footer__title">О компании</a>
-							<a href="#" class="top-footer__title">Статьи</a>
-							<a href="#" class="top-footer__title">Контакты </a>
+							<a href="#examples" class="top-footer__title">Портфолио</a>
+							<a href="#prices" class="top-footer__title">Стоимость</a>
+							<a href="#promotions" class="top-footer__title">Акции</a>
+							<a href="#stock" class="top-footer__title">Cклад</a>
+							<a href="#stages" class="top-footer__title">Как мы работаем</a>
+							<a href="#contacts" class="top-footer__title">Контакты </a>
 						</div>
 					</div>
 					<div class="top-footer__column">
@@ -1297,8 +1807,8 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20230210234621"></script>
-	<script src="js/app.min.js?_v=20230210234621"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20230211234119"></script>
+	<script src="js/app.min.js?_v=20230211234119"></script>
 </body>
 
 </html>
