@@ -3674,6 +3674,10 @@
             touchRatio: 1,
             simulateTouch: true,
             loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
             pagination: {
                 el: ".prices__pagination",
                 clickable: true
@@ -3699,31 +3703,51 @@
             },
             on: {}
         });
-        const sliderMain = document.querySelector(".content-tabs__slider");
-        const sliderNav = document.querySelector(".content-tabs__slider-nav");
-        let mySwiperNav = new core(sliderNav, {
-            slidesPerView: 5,
-            spaceBetween: 10,
-            loopedSlides: 5,
-            freeMode: true,
-            loop: true,
-            direction: "vertical",
-            observer: true,
-            observeParents: true,
-            observeSlideChildren: true
-        });
-        new core(sliderMain, {
-            modules: [ Navigation, Pagination, Thumb ],
-            spaceBetween: 10,
-            loop: true,
-            loopedSlides: 5,
-            thumbs: {
-                swiper: mySwiperNav
-            },
-            observer: true,
-            observeParents: true,
-            observeSlideChildren: true
-        });
+        const allSliders = document.querySelectorAll(".content-tabs__sliders");
+        allSliders.forEach((slider => {
+            const sliderMain = slider.querySelector(".content-tabs__slider");
+            const sliderNav = slider.querySelector(".content-tabs__slider-nav");
+            let mySwiperNav = new core(sliderNav, {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                loopedSlides: 5,
+                freeMode: true,
+                loop: true,
+                direction: "vertical",
+                observer: true,
+                observeParents: true,
+                observeSlideChildren: true,
+                breakpoints: {
+                    801: {
+                        slidesPerView: 5,
+                        spaceBetween: 10,
+                        direction: "horizontal"
+                    },
+                    1025: {
+                        slidesPerView: 5,
+                        spaceBetween: 10,
+                        direction: "vertical"
+                    }
+                }
+            });
+            new core(sliderMain, {
+                modules: [ Navigation, Pagination, Thumb ],
+                spaceBetween: 10,
+                loop: true,
+                loopedSlides: 5,
+                slidesPerView: 1,
+                thumbs: {
+                    swiper: mySwiperNav
+                },
+                pagination: {
+                    el: ".content-tabs__pagination",
+                    clickable: true
+                },
+                observer: true,
+                observeParents: true,
+                observeSlideChildren: true
+            });
+        }));
         if (document.querySelector(".reviews__slider")) new core(".reviews__slider", {
             modules: [ Navigation, Pagination ],
             observer: true,
@@ -3757,6 +3781,10 @@
             touchRatio: 1,
             simulateTouch: true,
             loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
             pagination: {
                 el: ".masters__pagination",
                 clickable: true
@@ -3835,6 +3863,10 @@
             touchRatio: 1,
             simulateTouch: true,
             loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
             pagination: {
                 el: ".commands__pagination",
                 clickable: true
@@ -3946,7 +3978,7 @@
     const iconMenu = document.querySelector(".icon-menu");
     const menuBody = document.querySelector(".menu__body");
     if (iconMenu) iconMenu.addEventListener("click", (function(e) {
-        document.body.classList.toggle("lock");
+        document.body.classList.toggle("_lock");
         iconMenu.classList.toggle("_active");
         menuBody.classList.toggle("_active");
     }));
