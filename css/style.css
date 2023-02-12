@@ -69,7 +69,7 @@ h6 {
   font-size: inherit;
 }
 
-.lock body {
+body._lock {
   overflow: hidden;
   -ms-touch-action: none;
       touch-action: none;
@@ -254,6 +254,7 @@ h6 {
 
 .header {
   padding: 15px 0;
+  z-index: 50;
 }
 
 .top-header {
@@ -2314,10 +2315,6 @@ h6 {
 }
 
 @media (min-width: 29.99875em) {
-  .header__top {
-    border-bottom: 2px solid #6cac3d;
-  }
-
   .middle-header__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2332,7 +2329,13 @@ h6 {
   }
 }
 
-@media (min-width: 29.99875em) and (min-width: 76.875em) {
+@media (min-width: 30.0625em) {
+  .header__top {
+    border-bottom: 2px solid #6cac3d;
+  }
+}
+
+@media (min-width: 30.0625em) and (min-width: 76.875em) {
   .header__top {
     padding-bottom: 1.5625rem;
   }
@@ -3578,10 +3581,11 @@ h6 {
 
   .menu__body::before {
     content: "";
+    z-index: 2;
     position: fixed;
     width: 100%;
-    top: -100%;
-    left: 0;
+    top: 0;
+    left: -100%;
     height: 4.6875rem;
     background-color: orange;
     z-index: 2;
@@ -3590,11 +3594,11 @@ h6 {
     transition: all 0.3s ease 0s;
   }
 
-  .menu-open .menu__body::before {
-    top: 0;
+  .menu__body::before._active {
+    left: 0;
   }
 
-  .menu-open .menu__body {
+  .menu__body._active {
     left: 0;
   }
 
@@ -3621,6 +3625,7 @@ h6 {
             flex: 0 0 30px;
     height: 1.125rem;
     z-index: 5;
+    cursor: pointer;
   }
 
   .icon-menu span,
@@ -3650,18 +3655,18 @@ h6 {
     top: calc(46% - 0.0625rem);
   }
 
-  .menu-open .icon-menu span {
+  .icon-menu._active span {
     width: 0;
   }
 
-  .menu-open .icon-menu::before {
+  .icon-menu._active::before {
     top: calc(50% - 0.0625rem);
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
 
-  .menu-open .icon-menu::after {
+  .icon-menu._active::after {
     bottom: calc(50% - 0.0625rem);
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -3673,12 +3678,6 @@ h6 {
   .header__foot {
     padding: 0;
     border-bottom: none;
-  }
-}
-
-@media (max-width: 43.75em) and (any-hover: none) {
-  .icon-menu {
-    cursor: default;
   }
 }
 
@@ -4925,7 +4924,7 @@ h6 {
 }
 }
 
-@media (min-width: 29.99875em) and (min-width: 20em) and (max-width: 76.875em) {
+@media (min-width: 30.0625em) and (min-width: 20em) and (max-width: 76.875em) {
 @supports (padding-bottom: clamp( 0.625rem , 0.2953296703rem  +  1.6483516484vw , 1.5625rem )) {
     .header__top {
       padding-bottom: clamp( 0.625rem , 0.2953296703rem  +  1.6483516484vw , 1.5625rem );
@@ -4939,7 +4938,7 @@ h6 {
 }
 }
 
-@media (min-width: 29.99875em) and (max-width: 20em) {
+@media (min-width: 30.0625em) and (max-width: 20em) {
   .header__top {
     padding-bottom: 0.625rem;
   }

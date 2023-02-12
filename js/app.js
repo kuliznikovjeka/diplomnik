@@ -13,53 +13,6 @@
             document.documentElement.classList.add(className);
         }));
     }
-    let bodyLockStatus = true;
-    let bodyLockToggle = (delay = 500) => {
-        if (document.documentElement.classList.contains("lock")) bodyUnlock(delay); else bodyLock(delay);
-    };
-    let bodyUnlock = (delay = 500) => {
-        let body = document.querySelector("body");
-        if (bodyLockStatus) {
-            let lock_padding = document.querySelectorAll("[data-lp]");
-            setTimeout((() => {
-                for (let index = 0; index < lock_padding.length; index++) {
-                    const el = lock_padding[index];
-                    el.style.paddingRight = "0px";
-                }
-                body.style.paddingRight = "0px";
-                document.documentElement.classList.remove("lock");
-            }), delay);
-            bodyLockStatus = false;
-            setTimeout((function() {
-                bodyLockStatus = true;
-            }), delay);
-        }
-    };
-    let bodyLock = (delay = 500) => {
-        let body = document.querySelector("body");
-        if (bodyLockStatus) {
-            let lock_padding = document.querySelectorAll("[data-lp]");
-            for (let index = 0; index < lock_padding.length; index++) {
-                const el = lock_padding[index];
-                el.style.paddingRight = window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";
-            }
-            body.style.paddingRight = window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";
-            document.documentElement.classList.add("lock");
-            bodyLockStatus = false;
-            setTimeout((function() {
-                bodyLockStatus = true;
-            }), delay);
-        }
-    };
-    function menuInit() {
-        document.querySelector(".menu-open");
-        if (document.querySelector(".icon-menu")) document.addEventListener("click", (function(e) {
-            if (bodyLockStatus && e.target.closest(".icon-menu")) {
-                bodyLockToggle();
-                document.documentElement.classList.toggle("menu-open");
-            }
-        }));
-    }
     function isObject(obj) {
         return null !== obj && "object" === typeof obj && "constructor" in obj && obj.constructor === Object;
     }
@@ -3990,6 +3943,33 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
+    const iconMenu = document.querySelector(".icon-menu");
+    const menuBody = document.querySelector(".menu__body");
+    if (iconMenu) iconMenu.addEventListener("click", (function(e) {
+        document.body.classList.toggle("lock");
+        iconMenu.classList.toggle("_active");
+        menuBody.classList.toggle("_active");
+    }));
+    document.querySelectorAll('a[href*="#"]').forEach((link => {
+        link.addEventListener("click", (function(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href").substring(1);
+            const scrollTagret = document.getElementById(href);
+            const topOffset = 0;
+            if (window.innerWidth < 480) 100 === topOffset;
+            const elementPosition = scrollTagret.getBoundingClientRect().top;
+            const offsetPosition = elementPosition - topOffset;
+            if (iconMenu.classList.contains("_active")) {
+                document.body.classList.remove("_lock");
+                menuBody.classList.remove("_active");
+                iconMenu.classList.remove("_active");
+            }
+            window.scrollBy({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }));
+    }));
     if (window.innerWidth < 992) {
         const items = document.querySelectorAll(".middle-header__item");
         items.forEach((item => {
@@ -4052,21 +4032,6 @@
             document.querySelector(`[data-tabs-target="${path}"]`).classList.add("tabs__content_active");
         };
     }));
-    document.querySelectorAll('a[href*="#"]').forEach((link => {
-        link.addEventListener("click", (function(e) {
-            e.preventDefault();
-            const href = this.getAttribute("href").substring(1);
-            const scrollTagret = document.getElementById(href);
-            const topOffset = 0;
-            const elementPosition = scrollTagret.getBoundingClientRect().top;
-            const offsetPosition = elementPosition - topOffset;
-            window.scrollBy({
-                top: offsetPosition,
-                behavior: "smooth"
-            });
-        }));
-    }));
     window["FLS"] = true;
     isWebp();
-    menuInit();
 })();
